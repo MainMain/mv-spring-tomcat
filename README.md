@@ -1,6 +1,6 @@
 mv-spring-tomcat
 ================
 
-Avancement : 
-06/10 - /  11.18AM : "4.5 Les entités JPA" OK
-06/10 - /  11.27AM : "4.6 La couche [DAO]" OK
+Avancement : <br>
+06/10 - /  11.18AM : "<i>4.5 Les entitÃ©s JPA</i>" OK <br>
+06/10 - /  11.27AM : "<i>4.6 La couche [DAO]</i>" OK<br>
