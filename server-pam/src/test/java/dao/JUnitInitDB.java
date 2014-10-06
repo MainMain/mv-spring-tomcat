@@ -47,7 +47,7 @@ public class JUnitInitDB {
     // on la remplit
     Indemnite indemnite1 = indemniteRepository.save(new Indemnite(1, 1.93, 2, 3, 12));
     Indemnite indemnite2 = indemniteRepository.save(new Indemnite(2, 2.1, 2.1, 3.1, 15));
-    Employe employe2 = employeRepository.save(new Employe("254104940426058", "Jouveinal", "Marie", "5 rue des oiseaux", "St Corentin", "49203", 
+    Employe employe2 = employeRepository.save(new Employe("254104940426058", "Jouveinal", "Marie", "5 rue des oiseaux", "St Corentin", "49203",
       indemnite2));
     Employe employe1 = employeRepository.save(new Employe("260124402111742", "Laverti", "Justine", "La br�lerie", "St Marcel", "49014", indemnite1));
     Cotisation cotisation1 = cotisationRepository.save(new Cotisation(3.49, 6.15, 9.39, 7.88));

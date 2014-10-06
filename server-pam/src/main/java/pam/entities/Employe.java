@@ -1,6 +1,5 @@
 package pam.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
@@ -17,7 +16,7 @@ public class Employe extends AbstractEntity implements Serializable {
     private String prenom;
     private String adresse;
     private String ville;
-    private String codePostal;
+    private String CP;
 
     // entité pointée par la clé étrangère
     @ManyToOne(fetch = FetchType.LAZY)
@@ -31,13 +30,13 @@ public class Employe extends AbstractEntity implements Serializable {
     public Employe() {
     }
 
-    public Employe(String SS, String nom, String prenom, String adresse, String ville, String codePostal, Indemnite indemnite) {
+    public Employe(String SS, String nom, String prenom, String adresse, String ville, String CP, Indemnite indemnite) {
         setSS(SS);
         setNom(nom);
         setPrenom(prenom);
         setAdresse(adresse);
         setVille(ville);
-        setCodePostal(codePostal);
+        setCodePostal(CP);
         setIndemnite(indemnite);
     }
 
@@ -109,11 +108,11 @@ public class Employe extends AbstractEntity implements Serializable {
     }
 
     public String getCodePostal() {
-        return codePostal;
+        return CP;
     }
 
     public void setCodePostal(String codePostal) {
-        this.codePostal = codePostal;
+        this.CP = codePostal;
     }
 
     public Indemnite getIndemnite() {

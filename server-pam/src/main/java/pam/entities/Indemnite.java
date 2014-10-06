@@ -12,10 +12,10 @@ import java.io.Serializable;
 public class Indemnite extends AbstractEntity implements Serializable {
 
   private int indice;
-  private double baseHeure;
-  private double entretienJour;
-  private double repasJour;
-  private double indemnitesCP;
+  private double base_Heure;
+  private double entretien_Jour;
+  private double repas_Jour;
+  private double indemnites_CP;
 
   public Indemnite() {
   }
@@ -49,34 +49,34 @@ public class Indemnite extends AbstractEntity implements Serializable {
   }
 
   public double getBaseHeure() {
-    return baseHeure;
+    return base_Heure;
   }
 
   public void setBaseHeure(double baseHeure) {
-    this.baseHeure = baseHeure;
+    this.base_Heure = baseHeure;
   }
 
   public double getEntretienJour() {
-    return entretienJour;
+    return entretien_Jour;
   }
 
   public void setEntretienJour(double entretienJour) {
-    this.entretienJour = entretienJour;
+    this.entretien_Jour = entretienJour;
   }
 
   public double getRepasJour() {
-    return repasJour;
+    return repas_Jour;
   }
 
   public void setRepasJour(double repasJour) {
-    this.repasJour = repasJour;
+    this.repas_Jour = repasJour;
   }
 
   public double getIndemnitesCP() {
-    return indemnitesCP;
+    return indemnites_CP;
   }
 
   public void setIndemnitesCP(double indemnitesCP) {
-    this.indemnitesCP = indemnitesCP;
+    this.indemnites_CP = indemnitesCP;
   }
 }
