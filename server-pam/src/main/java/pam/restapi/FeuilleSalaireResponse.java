@@ -1,6 +1,6 @@
 package pam.restapi;
 
-import pam.metier.FeuilleSalaire;
+import pam.entities.FeuilleSalaire;
 
 public class FeuilleSalaireResponse extends AbstractResponse {
 

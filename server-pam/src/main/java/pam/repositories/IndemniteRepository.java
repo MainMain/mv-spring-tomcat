@@ -1,4 +1,7 @@
 package pam.repositories;
 
-public interface IndemniteRepository{
+import org.springframework.data.repository.CrudRepository;
+import pam.entities.Indemnite;
+
+public interface IndemniteRepository extends CrudRepository<Indemnite, Double>{
 }

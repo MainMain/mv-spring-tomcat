@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "COTISATIONS")
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Cotisation extends AbstractEntity implements Serializable {
 
   private double csgrds;

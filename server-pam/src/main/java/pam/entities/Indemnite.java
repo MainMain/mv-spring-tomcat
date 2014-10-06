@@ -1,8 +1,14 @@
 
 package pam.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 
+@Entity
+@Table(name = "INDEMNITES")
 public class Indemnite extends AbstractEntity implements Serializable {
 
   private int indice;

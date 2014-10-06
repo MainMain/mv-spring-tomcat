@@ -1,4 +1,4 @@
-package pam.metier;
+package pam.entities;
 
 public class PamException extends RuntimeException {
 

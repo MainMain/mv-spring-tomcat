@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import pam.config.DomainAndPersistenceConfig;
-import pam.metier.PamException;
+import pam.entities.PamException;
 import pam.metier.IMetier;
 
 @SpringApplicationConfiguration(classes = DomainAndPersistenceConfig.class)

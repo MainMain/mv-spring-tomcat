@@ -1,4 +1,7 @@
 package pam.repositories;
 
-public interface CotisationRepository{
+import org.springframework.data.repository.CrudRepository;
+import pam.entities.Cotisation;
+
+public interface CotisationRepository extends CrudRepository<Cotisation, Double> {
 }

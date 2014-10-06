@@ -2,6 +2,7 @@ package pam.metier;
 
 import org.springframework.stereotype.Service;
 import pam.entities.Employe;
+import pam.entities.FeuilleSalaire;
 
 import java.util.List;
 

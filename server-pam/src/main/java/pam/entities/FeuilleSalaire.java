@@ -1,7 +1,4 @@
-package pam.metier;
-
-import pam.entities.Cotisation;
-import pam.entities.Employe;
+package pam.entities;
 
 import java.io.Serializable;
 
