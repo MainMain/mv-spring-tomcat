@@ -1,5 +1,6 @@
 package pam.entities;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "EMPLOYES")
+@JsonFilter("employeFilter")
 public class Employe extends AbstractEntity implements Serializable {
 
     @Id

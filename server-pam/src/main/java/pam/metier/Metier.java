@@ -50,15 +50,12 @@ public class Metier implements IMetier {
         double totalCotisation;
         double totalIndemnites;
 
-        System.out.println(SS);
-
         // On vérifie s'il y a un employé
         if (!employeRepository.findBySS(SS).iterator().hasNext())
         {
             throw new pam.entities.PamException("Pas d'employé correspondant à ce SS", 101);
         }
 
-        System.out.println(SS);
         // on récupère l'employé
         Employe emp = employeRepository.findBySS(SS).iterator().next();
 
