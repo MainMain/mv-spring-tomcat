@@ -1,6 +1,9 @@
-package pam.entities;
+package pam.metier;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class ElementsSalaire implements Serializable {
 
@@ -66,7 +69,11 @@ public class ElementsSalaire implements Serializable {
 	}
 
 	public double getSalaireNet() {
-		return salaireNet;
+       /* DecimalFormat df = new DecimalFormat(".##");
+        df.setRoundingMode(RoundingMode.HALF_UP);
+        df.format(salaireNet);*/
+
+		return (double)Math.round(salaireNet * 100) / 100;
 	}
 
 	public void setSalaireNet(double salaireNet) {

@@ -1,4 +1,3 @@
-
 package pam.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

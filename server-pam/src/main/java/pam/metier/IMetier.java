@@ -1,7 +1,6 @@
 package pam.metier;
 
 import pam.entities.Employe;
-import pam.entities.FeuilleSalaire;
 
 import java.util.List;
 
