@@ -9,7 +9,6 @@ import java.util.List;
 public interface EmployeRepository extends CrudRepository<Employe, Long> {
 
     // recherche d'un employé via son n° SS
-    // Pas besoin d'écrire la req JPQL car générée automatiquement
-    @Query("select e from Employe e where e.SS=?1")
+    @Query("select e from Employe e left join fetch e.indemnite i where e.SS=?1 and e.idIndemnite=i.id")
     public List<Employe> findBySS(String SS);
 }
